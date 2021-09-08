@@ -17,10 +17,9 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
 on:
   push:
-    types: [created]
 
 env:
-  AZURE_WEBAPP_NAME: CatanSettlersMapGenerator    # set this to your application's name
+  AZURE_WEBAPP_NAME: CatanSettlersMapGenerator2    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: 'build'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '10.x'                # set this to the node version to use
 
