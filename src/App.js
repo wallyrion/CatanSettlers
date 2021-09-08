@@ -242,12 +242,20 @@ function drawGeks(ctx, currentX = 0, currentY = 0, pattern1, settings) {
 function App() {
   return (
     <div className="App">
-      <div>
-        <button class="generate-button" onClick={onGenerateMap}> Generate map</button>
-        <canvas id="canvas" width="1200" height="800"></canvas>
-      </div>
-
-      {setTimeout(() => onGenerateMap(), 1000)}
+            <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+        Please
+        </p>
+        <a
+          className="App-link"
+          href="https://photos.google.com/photo/AF1QipMcFWYPTDwB87LPFCWR5h-Dp3q-aYbR-cIr25BC"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Make me happy
+        </a>
+      </header>
     </div>
   );
 }
