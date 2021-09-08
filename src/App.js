@@ -1,8 +1,8 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-const MAX_DROPS_SUM = 11;
-const MIN_DROPS_SUM = 6;
+/* const MAX_DROPS_SUM = 11;
+const MIN_DROPS_SUM = 6; */
 
 
 var length = 100;
@@ -35,7 +35,7 @@ let createdFields = [];
   }, 1500)
 }
  */
-const getDropsQuantity = (value, dimension = 6) => {
+/* const getDropsQuantity = (value, dimension = 6) => {
   let count = 0;
   for (let cube1 = 1; cube1 <= dimension; cube1++) {
     for (let cube2 = 1; cube2 <= dimension; cube2++) {
@@ -46,9 +46,9 @@ const getDropsQuantity = (value, dimension = 6) => {
   }
 
   return count;
-}
+} */
 
-function getDrops() {
+/* function getDrops() {
   const dropsMap = {};
 
   return (value) => {
@@ -59,9 +59,9 @@ function getDrops() {
     dropsMap[value] = drops;
     return drops;
   }
-}
+} */
 
-const getDropsNumber = getDrops();
+//const getDropsNumber = getDrops();
 
 function onGenerateMap() {
   let canvas = document.getElementById('canvas');
