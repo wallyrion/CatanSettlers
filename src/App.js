@@ -242,7 +242,7 @@ function drawGeks(ctx, currentX = 0, currentY = 0, pattern1, settings) {
 function App() {
 
   useEffect(() => {
-    setTimeout(() => onGenerateMap(), 500);
+    setTimeout(() => onGenerateMap(), 1200);
   }, []);
   return (
     <div className="App">
