@@ -1,8 +1,8 @@
 import { shuffle } from './shuffle';
 import { RawMaterialType, GeksField, GeksFieldInternal } from './../interfaces/geks-fields';
 
-const MAX_DROPS_SUM = 12;
-const MIN_DROPS_SUM = 7;
+const MAX_DROPS_SUM = 11;
+const MIN_DROPS_SUM = 8;
 
 const crossesRelation: number[][] = [
     [1, 2], [1, 2, 5], [2, 3], [2, 3, 6], [3, 7], [1, 4, 5], [4, 8, 9], [1, 4], [4, 8], [8, 13], [8, 9, 13],
@@ -35,14 +35,14 @@ export const generateMap = (geksInternal: GeksFieldInternal[], numbers: number[]
     return geksMap;
 }
 
-export const tryToGenerateMap = (geksInternal: GeksFieldInternal[], numbers: number[], materials: RawMaterialType[], times = 25): GeksField[] => {
+export const tryToGenerateMap = (geksInternal: GeksFieldInternal[], numbers: number[], materials: RawMaterialType[], times = 100): GeksField[] => {
     if (times === 0) {
         alert('Unable to draw the map. Please try again');
         return;
     }
     try {
         const result = generateMap(geksInternal, [...numbers], [...materials]);
-        console.log('Map successfully created, attempt times: ' + (25 - times + 1))
+        console.log('Map successfully created, attempt times: ' + (100 - times + 1))
         return result;
     }
     catch {
